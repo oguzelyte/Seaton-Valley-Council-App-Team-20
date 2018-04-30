@@ -16,10 +16,7 @@ Lead Programmer of Team 20.(For more info visit: http://bit.ly/team-20-ncl) A 
 •	The Twitter API and the Twitters webserver must online and functionable.  <br>
 •	The Firebase cloud server must be functional.<br>
 •	The Google Maps application (for the best functionality) or a web browser installed.  <br>
-<br>
-<b>The "1.Source Code" folder contains a folder "SeatonValleyApp" which contains the source code of the project</b><br>
-<b>The "2.Javadoc" folder contains the documentation of the Source Code.</b><br><b>The "3.Testing" folder contains the bug list,the test log and a performance report.</b><br><b>The "4.Signed APK" folder contains the .apk of the application</b><br><b>The "5.Links" folder contains the link of Team 20 website and the link of the app on Google Play Store.</b><br><b>We also include a User-Manual and Promotional Video.</b><br>
-<br>
+<br>
 <b>External Libraries and APIs:</b><br>
 <br>
 For Basic Android Functionalities:<br>
