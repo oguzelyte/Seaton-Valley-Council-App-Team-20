@@ -12,7 +12,9 @@ allowing them to report any problems and find out what is happening in their are
 as well as allowing tourists to find out a bit more about the villages 
 and easily find nearby things to do.
 
-<b>For a live demo visit: https://play.google.com/store/apps/details?id=com.ncl.team20.seatonvalley</b>
+<b>Marketing Video - https://www.youtube.com/watch?v=LoaYxeZ4bM4 </b>
+
+<b>For a live demo visit: https://play.google.com/store/apps/details?id=com.ncl.team20.seatonvalley</b><br>
 <b>Note the API keys and other security related fields were removed from the project, you have to add your  own manually</b>
 <i>Updated on 23/04/2018</i>
 <br>
