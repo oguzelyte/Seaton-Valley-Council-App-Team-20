@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/ic_menu_news"
+            android:title="@string/news_title" />
+        <item
+            android:id="@+id/nav_twitter"
+            android:icon="@drawable/ic_menu_twitter"
+            android:title="@string/twitter_title" />
+        <item
+            android:id="@+id/nav_events"
+            android:icon="@drawable/ic_menu_events"
+            android:title="@string/events_title" />
+        <item
+            android:id="@+id/nav_find"
+            android:icon="@drawable/ic_menu_nearest"
+            android:title="@string/places_title" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_menu_contactus"
+            android:title="@string/contact_title" />
+        <item
+            android:id="@+id/nav_report"
+            android:icon="@drawable/ic_menu_report"
+            android:title="@string/report_title" />
+        <item
+            android:id="@+id/nav_councilors"
+            android:icon="@drawable/ic_menu_councilors"
+            android:title="@string/councilors_title" />
+        <item
+            android:id="@+id/nav_info"
+            android:icon="@drawable/ic_menu_info"
+            android:title="@string/about_seaton_title" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_settings"
+            android:title="@string/settings" />
+
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_share_black_24dp"
+            android:title="@string/share" />
+    </group>
+
+</menu>

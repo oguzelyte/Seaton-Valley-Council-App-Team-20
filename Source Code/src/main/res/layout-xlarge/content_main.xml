@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?><!--suppress ALL -->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e0dede"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ncl.team20.seatonvalley.MainActivity"
+    tools:ignore="Overdraw"
+    tools:showIn="@layout/app_bar_main">
+
+    <!--suppress CheckTagEmptyBody, CheckTagEmptyBody, CheckTagEmptyBody, CheckTagEmptyBody -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:id="@+id/carousel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/background_light"
+
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_weight="2"
+                    android:adjustViewBounds="true"
+
+                    android:cropToPadding="true"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/ic_logo" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-condensed"
+                    android:gravity="center_vertical"
+                    android:text="@string/latest_news"
+                    android:textAlignment="textStart"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/weather"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/weather_icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/weather_icon_description"
+                        android:cropToPadding="true"
+                        android:scaleType="fitEnd" />
+
+                    <TextView
+                        android:id="@+id/weather_temperature"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="0dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="2"
+                        android:gravity="center_vertical"
+                        android:textAlignment="textStart" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible">
+
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    style="@android:style/Widget.DeviceDefault.ProgressBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="40dp"
+                    android:layout_weight="1"
+                    android:indeterminate="false"
+                    android:visibility="gone" />
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/recycle_view_test"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recycler_view_latest"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_marginStart="5dp"
+                            android:clipChildren="true"
+                            android:clipToPadding="true"
+                            android:paddingLeft="15dp"
+                            android:scrollbars="none"></android.support.v7.widget.RecyclerView>
+
+                        <com.uncopt.android.widget.text.justify.JustifiedTextView
+                            android:id="@+id/net_down"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/recycler_view_latest"
+                            android:paddingBottom="5dp"
+                            android:paddingEnd="15dp"
+                            android:paddingStart="15dp"
+                            android:text="@string/net_down_main"
+                            android:textAlignment="center"
+                            android:visibility="gone" />
+
+                        <cz.intik.overflowindicator.OverflowPagerIndicator
+                            android:id="@+id/view_pager_indicator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_below="@id/net_down"
+                            android:backgroundTint="@color/colorPrimary"
+                            android:paddingBottom="5dp">
+
+                        </cz.intik.overflowindicator.OverflowPagerIndicator>
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:id="@+id/progressbar_latest"
+                        style="@android:style/Widget.DeviceDefault.ProgressBar.Small"
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="40dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_weight="1"
+                        android:indeterminate="false"
+                        android:visibility="gone" />
+
+                </FrameLayout>
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/carousel"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/background_light"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.3"
+                android:baselineAligned="false"
+                android:gravity="top"
+                android:orientation="horizontal"
+                tools:ignore="NestedWeights"
+                tools:layout_editor_absoluteX="58dp">
+
+                <LinearLayout
+                    android:id="@+id/news_btn"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:orientation="vertical"
+                    tools:ignore="NestedWeights">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.8"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"
+                        android:clickable="false"
+                        android:contentDescription="@string/news"
+                        android:cropToPadding="true"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/news" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:clickable="false"
+                        android:text="@string/news"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/twitter_btn"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.8"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"
+                        android:clickable="false"
+                        android:contentDescription="@string/twitter"
+                        android:cropToPadding="true"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/twitter" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:clickable="false"
+                        android:text="@string/twitter"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/events_btn"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.8"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"
+                        android:clickable="false"
+                        android:contentDescription="@string/events"
+                        android:cropToPadding="true"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/events" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:clickable="false"
+                        android:text="@string/events"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.3"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="58dp">
+
+                <LinearLayout
+                    android:id="@+id/find_btn"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="start"
+                    android:orientation="vertical"
+                    tools:ignore="NestedWeights">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.8"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"
+
+                        android:clickable="false"
+                        android:contentDescription="@string/find_nearest"
+                        android:cropToPadding="true"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/nearest" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:clickable="false"
+                        android:maxLines="1"
+                        android:text="@string/find_nearest"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/contact_btn"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.8"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"
+                        android:clickable="false"
+                        android:contentDescription="@string/contact"
+                        android:cropToPadding="true"
+
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/contact_us"
+                        tools:ignore="NestedWeights" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:clickable="false"
+
+                        android:text="@string/contact"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/report_btn"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+
+
+                    android:clickable="true"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.8"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"
+                        android:clickable="false"
+                        android:contentDescription="@string/report"
+                        android:cropToPadding="true"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/report"
+                        tools:ignore="NestedWeights" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:clickable="false"
+                        android:text="@string/report"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.3"
+                android:baselineAligned="false"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="58dp">
+
+                <LinearLayout
+                    android:id="@+id/council_btn"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="start"
+
+                    android:orientation="vertical"
+                    tools:ignore="NestedWeights">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.8"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"
+                        android:clickable="false"
+                        android:contentDescription="@string/council"
+                        android:cropToPadding="true"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/councilors" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:clickable="false"
+                        android:text="@string/council"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/info_btn"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.8"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"
+                        android:clickable="false"
+                        android:contentDescription="@string/about"
+                        android:cropToPadding="true"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/info"
+                        tools:ignore="NestedWeights" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:clickable="false"
+                        android:text="@string/about"
+                        android:textAlignment="center" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/settings_btn"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="end"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.8"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"
+                        android:clickable="false"
+                        android:contentDescription="@string/settings"
+                        android:cropToPadding="true"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/settings"
+                        tools:ignore="NestedWeights" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.1"
+                        android:clickable="false"
+                        android:text="@string/settings"
+                        android:textAlignment="center" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

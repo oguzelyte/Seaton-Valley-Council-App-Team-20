@@ -1,0 +1,121 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId 'com.ncl.team20.seatonvalley'
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionName '1'
+        versionCode 8
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+    }
+    productFlavors {
+    }
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    //noinspection GradleDependency
+    implementation 'com.android.support:appcompat-v7:27.1.0'
+
+    //noinspection GradleDependency
+    implementation 'com.android.support:design:27.1.0'
+
+    //noinspection GradleDependency
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+
+    //noinspection GradleDependency
+    implementation 'com.google.android.gms:play-services-ads:12.0.0'
+
+    //noinspection GradleDependency
+    implementation 'com.android.support:support-v4:27.1.0'
+
+    //noinspection GradleDependency
+    implementation 'com.android.support:support-vector-drawable:27.1.0'
+    compile 'com.android.volley:volley:1.1.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    //noinspection GradleDependency
+    implementation 'com.google.android.gms:play-services-location:12.0.0'
+
+    //noinspection GradleDependency
+    implementation 'com.android.support:support-media-compat:27.1.0'
+
+    //noinspection GradleDependency
+    implementation 'com.android.support:animated-vector-drawable:27.1.0'
+
+    //noinspection GradleDependency
+    compile 'com.android.support:cardview-v7:27.1.0'
+
+    //noinspection GradleDependency
+    compile 'com.android.support:recyclerview-v7:27.1.0'
+
+    //noinspection GradleDependency
+    compile 'com.android.support:design:27.1.0'
+    compile 'com.google.code.gson:gson:2.8.0'
+
+    //noinspection GradleDependency
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+
+    //noinspection GradleDependency
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+
+    // Glide
+    compile 'org.jsoup:jsoup:1.8.3'
+    compile 'com.uncopt:android.justified:1.0'
+
+    //noinspection GradleDependency
+
+    //noinspection GradleDependency
+    compile 'com.google.firebase:firebase-core:12.0.0'
+
+    //noinspection GradleDependency
+    compile 'com.google.firebase:firebase-messaging:12.0.0'
+    compile 'com.twitter.sdk.android:twitter:3.2.0'
+    compile 'commons-io:commons-io:2.4'
+    implementation 'com.twitter.sdk.android:twitter:3.2.0'
+
+    //AndroidJUnitRunner and JUnit Rules
+    androidTestCompile 'com.android.support.test:runner:1.0.1'
+    androidTestCompile 'com.android.support.test:rules:1.0.1'
+
+    //Espresso dependencies
+    androidTestCompile 'com.android.support.test.espresso:espresso-intents:3.0.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    androidTestCompile 'com.android.support.test.espresso:espresso-contrib:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+        exclude group: 'com.android.support', module: 'support-v4'
+        exclude group: 'com.android.support', module: 'design'
+        exclude group: 'com.android.support', module: 'recyclerview-v7'
+    }
+
+    //noinspection GradleDependency
+    implementation 'com.google.android.gms:play-services-maps:12.0.0'
+    compile 'cz.intik:overflow-pager-indicator:1.2.1'
+}
+
+apply plugin: 'com.google.gms.google-services'
+
+
+
+
+
+
+
+

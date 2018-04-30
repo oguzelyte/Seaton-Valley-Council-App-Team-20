@@ -1,0 +1,190 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Seaton Valley Council</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="title_activity_news">NewsActivity</string>
+    <string name="title_activity_twitter">TwitterActivity</string>
+    <string name="title_activity_events">EventsActivity</string>
+    <string name="title_activity_find">FindActivity</string>
+    <string name="title_activity_contact">ContactActivity</string>
+    <string name="title_activity_report">ReportActivity</string>
+    <string name="title_activity_council">CouncilActivity</string>
+    <string name="title_activity_info">InfoActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+    <string name="events">Events</string>
+    <string name="news">News</string>
+    <string name="twitter">Twitter</string>
+    <string name="find_nearest">Places</string>
+    <string name="contact">Contact</string>
+    <string name="report">Report</string>
+    <string name="council">Council</string>
+    <string name="about">Info</string>
+    <string name="settings">Settings</string>
+    <string name="home">Home</string>
+    <string name="logo">Logo</string>
+    <string name="weather_icon_description" />
+    <string name="weather_error">Weather couldn\'t be retrieved.</string>
+    <string name="read_more">Read More</string>
+    <string name="seaton_intro">Seaton Valley locality lies in the South East of Northumberland bordering Tyne &amp; Wear and has a population of 15,040. In terms of area, it measures 28.4 km² (the largest of the 10 localities in South East Northumberland), and has a population density of 530 people per km². Seaton Valley locality includes Seaton Delaval, Seghill, New Hartley, Holywell and Seaton Sluice. </string>
+    <string name="seaton_delaval_title">Seaton Delaval</string>
+    <string name="seaton_delaval_para">Seaton Delaval is the main service centre for Seaton Valley, and lies at the centre of the Valley. It is a historic village associated with the Delaval family, but was also a mining area. It contains a mix of social and private housing. The population is around 4,400. Facilities include the area’s high school (Astley High School), Whytrig Middle School and Seaton Delaval First School, a community centre, Seaton Delaval Arts Centre, a post office, two Co-operative supermarkets and numerous other shops, pubs, cafes and take-aways, social clubs and churches. It also contains Astley Park, the main public park for the Valley area. The main office for Seaton Valley Council is located in Seaton Delaval.</string>
+    <string name="seaton_delaval_img_desc">Image of Seaton Delaval</string>
+
+    <string name="seaton_sluice_title">Seaton Sluice</string>
+    <string name="seaton_sluice_para">Seaton Sluice is a large village on the coast. It includes the village of Old Hartley, still recognised by some local people as a separate village. The population is around 3,000 people. The village has an attractive setting at the mouth of Seaton Burn, with a historic harbour, a fine sandy beach and dunes, and the open space of Holywell Dene nearby. It is also the closest village to Seaton Delaval Hall, a National Trust property. As a result, Seaton Sluice is both an attractive residential area, and a popular visitor destination. Village facilities include two schools (Seaton Sluice First School and Seaton Sluice Middle School), a community centre and library, post office, several shops, cafes, pubs and social clubs, and two churches. The village has significant industrial heritage, linked to the Delaval family, as highlighted by the Local History Society.</string>
+    <string name="seaton_sluice_img_desc">Image of Seaton Sluice</string>
+
+    <string name="holywell_title">Holywell</string>
+    <string name="holywell_para">Holywell is a small village with a population of approximately 2,700 people. It lies just to the south east of Seaton Delaval, without a clear physical separation between the two villages. The village has its own character and identity, and benefits from being close to Holywell Dene, offering attractive walking routes. The heart of the village is a conservation area due to its historic character. Village facilities include a school (Holywell First School), a small community centre, a small shop, two pubs and a church (St Mary’s).</string>
+    <string name="holywell_img_desc">Image of Holywell</string>
+
+    <string name="new_hartley_title">New Hartley</string>
+    <string name="new_hartley_para">New Hartley is a small village to the north of Seaton Delaval with a population of around 2,000 people. It is a former mining village, with a strong identity, partly associated with the New Hartley Colliery disaster of 1862. Village facilities include a school (New Hartley First School), a community centre, post office, a shop, a pub, the Victory Club and two churches (St Michael and All Angels and Our Lady and St Joseph).</string>
+    <string name="new_hartley_img_desc">Image of New Hartley</string>
+
+    <string name="seghill_title">Seghill</string>
+    <string name="seghill_para">Seghill lies on the western edge of Seaton Valley, close to the A189 and A19 trunk roads and within easy reach of the northern edge of Tyneside. It is a former mining village, with a relatively large proportion of former mining and other social housing. However, it also contains some newer developments of private housing, and a few older properties. The population is around 3,000. Village facilities include two schools (Seghill First School and Atkinson House School), a community centre, post office, several shops and take aways, a pub, rugby club and other social clubs, and two churches.</string>
+    <string name="seghill_img_desc">Image of Seghill</string>
+    <string name="about_seaton">About Seaton Valley</string>
+    <string name="this_feature_is_under_development_by_alexander_pullen" tools:keep="@string/this_feature_is_under_development_by_alexander_pullen">This feature is under development by Alexander Pullen.</string>
+    <string name="latest_news">Latest News</string>
+    <string name="stephen_stanners_picture">Stephen Stanners</string>
+    <string name="ann_stanners_picture">Ann Stanners</string>
+    <string name="barbara_burt_picture">Barbara Burt</string>
+    <string name="daniel_nesbitt_picture">Daniel Nesbitt</string>
+    <string name="eva_coulson_picture">Eva Coulson</string>
+    <string name="karen_collier_picture">Karen Collier</string>
+    <string name="les_bowman_picture">Les Bowman</string>
+    <string name="simon_hartland_picture">Simon Hartland</string>
+    <string name="susan_doungworth_picture">Susan Dungworth</string>
+    <string name="council_about_title">About Seaton Valley Council</string>
+    <string name="council_about">\nSeaton Valley Council, first came into being on 1st April 2009, following local government review in Northumberland which saw the then six District Councils in Northumberland, and the County Council merge into one Council for the whole of Northumberland.\n\nAs part of this process a number of new Parish Councils were created throughout Northumberland to provide localised services and to account for these services to their communities.\n\nSince 2009 Seaton Valley Council has taken on a number of responsibilities from the County Council because both Councils have decided that these services are better provided locally.\n</string>
+    <string name="ann_stanners_position">(Holywell)</string>
+    <string name="barbara_burt_position">Vice Chair (Hartley)</string>
+    <string name="daniel_nesbitt_position">(Seghill with Seaton Delaval)</string>
+    <string name="eva_coulson_position">(Holywell)</string>
+    <string name="karen_collier_position">(Hartley)</string>
+    <string name="les_bowman_position">(Holywell)</string>
+    <string name="simon_hartland_position">(Seghill with Seaton Delaval)</string>
+    <string name="stephen_stanners_position">Chair (Seghill with Seaton Devlaval)</string>
+    <string name="susan_doungworth_position">(Hartley)</string>
+    <string name="ann_stanners_contact_phone">07576431152</string>
+    <string name="ann_stanners_contact_email">annstanners@hotmail.com</string>
+    <string name="barbara_burt_contact_phone">01912372712</string>
+    <string name="barbara_burt_contact_email">barbaraburt43@gmail.com</string>
+    <string name="daniel_nesbitt_contact_phone">07432137980</string>
+    <string name="daniel_nesbitt_contact_email">danielnez1@gmail.com</string>
+    <string name="eva_coulson_contact_phone">07548252042</string>
+    <string name="eva_coulson_contact_email">evacoulson@hotmail.co.uk</string>
+    <string name="karen_collier_contact_phone">01912370954</string>
+    <string name="karen_collier_contact_email">k.collier714@btinternet.com</string>
+    <string name="les_bowman_contact_phone">01912377032</string>
+    <string name="les_bowman_contact_email">lesbowman@me.com</string>
+    <string name="simon_hartland_contact_phone">07709681772</string>
+    <string name="simon_hartland_contact_email">simonhartland@hotmail.co.uk</string>
+    <string name="stephen_stanners_contact_phone">07892696394</string>
+    <string name="stephen_stanners_contact_email">stephenstanners@hotmail.co.uk</string>
+    <string name="susan_doungworth_contact_phone">01912375532</string>
+    <string name="susan_doungworth_contact_email">susan.dungworth@northumberland.gov.uk</string>
+    <string name="council_contact_phone">01912379870</string>
+    <string name="council_contact_email">clerk@seatonvalleycommunitycouncil.gov.uk</string>
+
+    <string name="storage">Storage</string>
+    <string name="clear_cache">Clear Cache</string>
+
+    <string name="restaurants">Restaurants</string>
+    <string name="coffee_shops">Coffee Shops</string>
+    <string name="markets">Shops</string>
+    <string name="banks">ATM</string>
+    <string name="petrol_stations">Petrol Stations</string>
+    <string name="entertainment">Points of Interest</string>
+    <string name="services">ATMs</string>
+    <string name="seaton_valley_council_app_version">Seaton Valley Council App Version : Release 1.0</string>
+    <string name="open_in_google_maps">Open in Google Maps</string>
+    <string name="open_weather_api_key">INSERT API KEY HERE</string>
+    <string name="home_screen_title">Home</string>
+    <string name="rating_not_available">Rating: Not Available.</string>
+    <string name="rating">Rating:</string>
+    <string name="open">Open</string>
+    <string name="closed">Closed</string>
+    <string name="max_rating">/5.0</string>
+    <string name="contact_title">Contact</string>
+    <string name="settings_title">Settings</string>
+    <string name="events_title">Events</string>
+    <string name="report_title">Report</string>
+    <string name="on_connection">Connected</string>
+    <string name="on_no_connection">No Internet Connection. Make sure your Wi-Fi or cellular data is turned on, then try again.</string>
+    <string name="base_url">http://seatonvalleycommunitycouncil.gov.uk/</string>
+    <string name="request">/wp-json/wp/v2/posts?per_page=</string>
+    <string name="categories"><![CDATA[&categories=]]></string>
+    <string name="consumer_key"></string>
+    <string name="consumer_secret"></string>
+    <string name="council_twitter_name">seatonvalleycc</string>
+    <string name="twitter_title">Twitter</string>
+    <string name="places_base_url">https://maps.googleapis.com/maps/api/place/nearbysearch/</string>
+    <string name="places_request"><![CDATA[json?location=55.072245,-1.529131&radius=1000&keyword=]]></string>
+    <string name="type"><![CDATA[&type=]]></string>
+    <string name="API_KEY"></string>
+    <string name="closed_color">#F50057</string>
+    <string name="open_color">#1DE9B6</string>
+    <string name="news_title">News</string>
+
+    <string name="places_title">Places</string>
+
+
+    <string name="councilors_title">Councillors</string>
+    <string name="about_seaton_title">About Seaton</string>
+
+    <string name="share">Share</string>
+    <string name="get_notifications_from_seaton_valley_council">Get Notifications from Seaton Valley Council</string>
+    <string name="number_of_posts_to_display">Number of Posts to Display</string>
+    <string name="notifications">Notifications</string>
+
+    <string-array name="posts_array">
+        <item>10</item>
+        <item>25</item>
+        <item>50</item>
+    </string-array>
+
+    <string name="council_name">Seaton Valley Council</string>
+    <string name="council_address">20–22 Astley Road, Seaton Delaval, Northumberland, NE25 0DG</string>
+    <string name="opening_hours">Opening Hours</string>
+    <string name="opening_times">Monday to Thursday: 8:30am - 4:30pm\nFriday: 8:30am - 4:00pm</string>
+    <string name="contact_directly">If you would prefer to speak to someone in person, or would like to have a specific query answered, then please feel free to contact the Council directly.</string>
+    <string name="contact_form">Contact Form</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="other">Other</string>
+    <string name="email">Email: (Required)</string>
+    <string name="message">Message…</string>
+    <string name="report_message">Report Message…</string>
+    <string name="send_message">Send Message</string>
+    <string name="send_report">Send Report</string>
+    <string name="report_form">Report Form</string>
+    <string name="litter">Litter</string>
+    <string name="report_subject">Report Subject:</string>
+    <string name="dog_fouling">Dog Fouling</string>
+    <string name="report_other">Please Specify…</string>
+    <string name="location_icon">location</string>
+    <string name="seaton_valley_email"></string>
+    <string name="seaton_valley_password"></string>
+    <string name="message_body_error">Message cannot be less than 20 characters long.</string>
+    <string name="last_name_error">Last name cannot be empty.</string>
+    <string name="first_name_error">Name cannot be empty.</string>
+    <string name="invalid_email_error">Invalid e-mail address.</string>
+    <string name="subject">Subject</string>
+    <string name="add_event">+</string>
+    <string name="map_council_address_title">Seaton Valley Community Council</string>
+    <string name="title_activity_display_place_details">DisplayPlaceDetails</string>
+    <string name="net_down_main">Unable to connect couldn\'t retrieve the latest news.</string>
+    <string name="seaton_open_weather_link">https://openweathermap.org/city/2638273</string>
+    <string name="contactPhoneDesc">council contact phone</string>
+    <string name="council_email_address">council email address</string>
+    <string name="notifications_admin_channel_name">Seaton Valley</string>
+    <string name="notifications_admin_channel_description">News</string>
+    <string name="other_text">Please specify</string>
+    <string name="subject_specify">Please specify a Subject.</string>
+
+</resources>

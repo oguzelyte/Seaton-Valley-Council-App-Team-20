@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ncl.team20.seatonvalley.activities.ReportActivity"
+    tools:showIn="@layout/app_bar_report">
+
+    <LinearLayout
+        android:id="@+id/report_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorPrimaryDark"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="top"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/report_form_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0"
+            android:text="@string/report_form"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <EditText
+
+            android:id="@+id/report_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="0"
+            android:ems="10"
+            android:hint="@string/first_name"
+            android:inputType="textCapSentences|text"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/colorFormHint"
+            android:textSize="14sp" />
+
+        <EditText
+
+            android:id="@+id/report_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="0"
+            android:ems="10"
+            android:hint="@string/last_name"
+            android:inputType="textCapSentences|text"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/colorFormHint"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_weight="1.75"
+                android:ems="10"
+                android:gravity="center"
+                android:paddingStart="5dp"
+                android:text="@string/report_subject"
+                android:textAlignment="textStart"
+                android:textColor="@color/colorFormHint"
+                android:textSize="14sp"
+                tools:ignore="NestedWeights,RtlCompat,RtlSymmetry" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/report_btn_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+
+                    android:id="@+id/report_litter_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/litter"
+                    android:textColor="@color/colorFormHint"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/report_dog_fouling_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:text="@string/dog_fouling"
+                    android:textColor="@color/colorFormHint"
+                    android:textSize="12sp" />
+
+                <RadioButton
+                    android:id="@+id/report_other_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/other"
+                    android:textColor="@color/colorFormHint"
+                    android:textSize="12sp" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <EditText
+
+            android:id="@+id/report_other"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="0"
+            android:ems="10"
+            android:hint="@string/report_other"
+            android:inputType="textEmailAddress|text"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/colorFormHint"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/report_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="0"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress|text"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/colorFormHint"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/report_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="@string/report_message"
+            android:inputType="textCapSentences|textMultiLine"
+            android:lines="15"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:textColor="@android:color/white"
+            android:textColorHint="@color/colorFormHint"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/report_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="0"
+            android:background="@color/colorGreenHighlight"
+            android:text="@string/send_report"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

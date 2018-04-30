@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="IconColors">
+        <ignore path="src/main/res/drawable-xhdpi/ic_stat.png" />
+        <ignore path="src/main/res/drawable-xhdpi/ic_stat.webp" />
+        <ignore path="src/main/res/drawable-xxhdpi/ic_stat.png" />
+    </issue>
+</lint>
