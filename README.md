@@ -1,6 +1,9 @@
-Lead Programmer of Team 20.(For more info visit: http://bit.ly/team-20-ncl) 
+<h1> Seaton Valley Council App </h1>
 
-A project for the module CSC2022 from Newcastle University Team 20. 
+A project for the module CSC2022 from Newcastle University Team 20.
+
+<b> I was responsible for the reporting feature, which allowed citizens of Seaton Valley to report certain types of erradic activity. </b>
+<b> Reporting feature can be seen in the marketing video - https://www.youtube.com/watch?v=LoaYxeZ4bM4  </b>
 
 Seaton Valley Council App supplies residents and tourists with information about 
 Seaton Valley as well as acting as a platform to contact the council about any issues. 
@@ -12,9 +15,6 @@ allowing them to report any problems and find out what is happening in their are
 as well as allowing tourists to find out a bit more about the villages 
 and easily find nearby things to do.
 
-<b>Marketing Video - https://www.youtube.com/watch?v=LoaYxeZ4bM4 </b>
-
-<b>For a live demo visit: https://play.google.com/store/apps/details?id=com.ncl.team20.seatonvalley</b><br>
 <b>Note the API keys and other security related fields were removed from the project, you have to add your  own manually</b>
 <i>Updated on 23/04/2018</i>
 <br>
@@ -53,7 +53,6 @@ and easily find nearby things to do.
 •	The Google Maps application (for the best functionality) or a web browser installed.  
 <br>
 
- 
 
 <br>
 <b>External Libraries and APIs:</b>
